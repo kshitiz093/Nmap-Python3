@@ -36,5 +36,5 @@ elif resp == '3':
     print("Ip Status: ", scanner[ip_addr].state())
     print(scanner[ip_addr].all_protocols())
     print("Open Ports: ", scanner[ip_addr]['tcp'].keys())
-elif resp >= '4':
+elif resp >= '4' or resp <= '0':
     print("Please enter a valid option")
